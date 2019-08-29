@@ -1,0 +1,1 @@
+Basic implementation of GraphQL.js and GraphQL Express server > schema is built with 'graphql' variables, which is where the query is also defined > express server then associates with the GraphQL Schema and makes graphiql available at specified URL
