@@ -1,1 +1,3 @@
-Basic implementation of GraphQL.js and GraphQL Express server > schema is built with 'graphql' variables, which is where the query is also defined > express server then associates with the GraphQL Schema and makes graphiql available at specified URL
+Basic implementation of GraphQL.js and GraphQL Express server > schema is built with 'graphql' variables, which is where the RootQuery is also defined > express server then associates with the GraphQL Schema and makes graphiql available at specified URL
+
+* Round 2 - the association between express and graphql is actually through "middleware" and is done with "app.use" - require('graphql') is what provides the special 'engine' objects - added another field to the schema and tested it in graphiql again

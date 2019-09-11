@@ -1,7 +1,5 @@
 const { graphql, GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
 
-
-
 const MyGraphQLSchema = new GraphQLSchema({
     query: new GraphQLObjectType({
         name: 'rootQuery',
@@ -11,10 +9,15 @@ const MyGraphQLSchema = new GraphQLSchema({
                 resolve() {
                     return 'world';
                 }
+            },
+            about: {
+                type: GraphQLString,
+                resolve() {
+                    return 'about what';
+                }
             }
         }
     })
 });
-
 
 module.exports = MyGraphQLSchema;
